@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Single Page Application</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <h1 style="color: green";>Hello world</h1>
-    <h1>Sunny YU</h1>
-    <h2>Nology first work</h2>
+<body id="home">
+  
+  <img src="./ubuntu.jpg" alt="">
+  <h1>Single Page Application</h1>
+
+  <!-- Selectable Icons -->
+  <div class="icon-container">
+    <div class="selectable-icon" onclick="openApp('app1')">
+      <img src="icon1.png" alt="Icon 1">
+    </div>
+    <div class="selectable-icon" onclick="openApp('app2')">
+      <img src="icon2.png" alt="Icon 2">
+    </div>
+    <div class="selectable-icon" onclick="openApp('app3')">
+      <img src="icon3.png" alt="Icon 3">
+    </div>
+  </div>
+
+  <!-- Modal for displaying app content -->
+  <div id="app-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeApp()">&times;</span>
+      <div id="app-content"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Current Time -->
+  <div id="current-time"></div>
+
+
 </body>
 </html>
+
