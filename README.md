@@ -1,2 +1,3 @@
 # my-first-repo
-Sunny's First Repo
+
+fake OS with ubuntu

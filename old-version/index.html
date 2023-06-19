@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fake Win98 OS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+  <script
+      src="https://kit.fontawesome.com/8830e31e89.js"
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+<body id="home">
+  
+  <!-- <img src="./ubuntu.jpg" alt=""> -->
+  <h1>Single Page Application</h1>
+  <!-- ysh<i class="fa-brands fa-firefox"></i> --> //firefox
+  
+  <!-- Selectable Icons -->
+  <div class="icon-container">
+    <div class="selectable-icon" onclick="openApp('app1')">
+      <img src="icon1.png" alt="Icon 1">
+    </div>
+    <div class="selectable-icon" onclick="openApp('app2')">
+      <img src="icon2.png" alt="Icon 2">
+    </div>
+    <div class="selectable-icon" onclick="openApp('app3')">
+      <img src="icon3.png" alt="Icon 3">
+    </div>
+  </div>
+
+  <!-- Modal for displaying app content -->
+  <div id="app-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeApp()">&times;</span>
+      <div id="app-content"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Current Time -->
+  <div id="current-time"></div>
+
+
+</body>
+</html>
+
