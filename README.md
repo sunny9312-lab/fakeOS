@@ -1,3 +1,3 @@
 # my-first-repo
 
-fake OS with ubuntu
+fake OS with win98
