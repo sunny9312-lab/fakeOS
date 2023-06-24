@@ -14,8 +14,7 @@ body .content {
 }
 body .content .desktop {
   display: flex;
-  /* flex-direction: column; */
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
 }
 body .content .desktop .folder {
@@ -46,14 +45,12 @@ body .content .desktop .form--clicked {
   flex-direction: column;
   align-items: center;
   row-gap: 0.3rem;
-  background-color: grey;
-  /* background-color: rgba(0, 0, 0, 0.4);  */
-  /* Black w/ opacity */
-  /* border-radius: 5%; */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  border-radius: 5%;
   margin-top: 1rem;
-  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 3px;
-  text-shadow: 2px 2px 2px white; */
+  text-shadow: 2px 2px 2px white;
 }
 body .content .desktop .form--clicked h1 {
   background-color: gray;
@@ -76,7 +73,7 @@ body .content .desktop .form--clicked .close {
   align-self: flex-end;
   margin: 2%;
   padding: 0 0.5rem 0 0.5rem;
-  /* border-radius: 10%; */
+  border-radius: 10%;
   font-size: 2rem;
   text-shadow: 1px 1px 1px white;
 }
@@ -92,37 +89,15 @@ body .content .desktop .gallery {
 body .content .desktop .internet {
   display: none; /* Hidden by default */
 }
-/* startmenu화면 ysh*/
-.startmenu {
-  display: none; /* Hidden by default */
-}
-/* startmenu clicked */
-
-.startmenu--clicked {
- 
-  display: flex;
-  position: relative;
-  z-index: 1; 
-  /* Sit on top */
-  padding: 1rem 2rem;
-  width: max-content ;
-  height: max-content;
-  /* border-radius: 2rem; */
-  background-color: grey ; 
-}
-
 body .content .desktop .gallery--clicked {
   display: flex;
-  position: relative; 
-  /* According to the regular document flow */
+  position: relative; /* According to the regular document flow */
   z-index: 1; /* Sit on top */
   padding: 1rem 2rem;
   width: max-content;
   height: max-content;
-  /* border-radius: 2rem; */
-  background-color: grey; 
-  /* background-color: rgba(0, 0, 0, 0.4);  */
-  /* Black w/ opacity */
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 /* internet화면 */
 body .content .desktop .internet--clicked {
@@ -130,8 +105,8 @@ body .content .desktop .internet--clicked {
   position: relative; /* According to the regular document flow */
   z-index: 1; /* Sit on top */
   padding: 1rem 2rem;
-  width: 500px;
-  height: 500px;
+  width: max-content;
+  height: max-content;
   border-radius: 2px;
   background-color: black;
 }
@@ -143,7 +118,7 @@ body .content .desktop .gallery--clicked .modal-content .close {
   float: right;
   font-size: 2rem;
   text-shadow: 1px 1px 1px white;
-  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 /* internet화면 */
 body .content .desktop .internet--clicked .modal-internet .close {
@@ -154,7 +129,7 @@ body .content .desktop .internet--clicked .modal-internet .close {
   float: right;
   font-size: 2rem;
   text-shadow: 1px 1px 1px white;
-  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 body .content .desktop .gallery--clicked .modal-content .close:hover, body .content .desktop .gallery--clicked .modal-content .close:focus {
@@ -173,19 +148,6 @@ body .content .desktop .gallery img {
   width: 15rem;
   padding: 0 0.5rem 0 0.5rem;
 }
-/* startmenu화면 */
-.startmenu img {
-  position: absolute;
-  /*ysh*/
-  bottom :90px;
-  left: 10px;
-
-  height: 500px;
-  width: 300px;
-  /* height: 10rem;
-  width: 15rem; */
-  padding: 0 0.5rem 0 0.5rem;
-}
 /* internet화면 */
 body .content .desktop .internet img {
   height: 10rem;
@@ -193,7 +155,6 @@ body .content .desktop .internet img {
   padding: 0 0.5rem 0 0.5rem;
 }
 body .content footer {
-  /* background-image: linear-gradient(#749ef8, #215cd8, #215cd8, #215cd8); */
   height: 3rem;
   margin-top: auto;
 }
@@ -201,19 +162,15 @@ body .content footer button {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 4.5rem;
-  height: 2rem;
-  /* width: 8.5rem;
-  height: 3rem; */
+  width: 8.5rem;
+  height: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
+  
   color: black;
   padding: 0%;
-}
-body .content footer button img {
-  padding-left: 7%;
-  height: 2.75rem;
 }
 
 body::before {
@@ -231,5 +188,4 @@ body::before {
   bottom :50px;
   right: 50px;
 }
-
 

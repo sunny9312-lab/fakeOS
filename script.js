@@ -25,7 +25,13 @@ console.log(album)
 
 const gallery = document.querySelector(".gallery")
 console.log(gallery)
+//ysh
+const startBtn = document.querySelector("#startBtn")
 
+const startmenu = document.querySelector(".startmenu")
+console.log(startmenu)
+
+//ysh
 const web = document.querySelector("#web")
 const internet = document.querySelector(".internet")
 console.log(internet)
@@ -69,6 +75,13 @@ closeAlbum.addEventListener("click", () => {
     gallery.classList.remove("gallery--clicked")
     console.log(gallery)
 })
+//ysh startmenu
+startBtn.addEventListener("click", () => {
+
+    startmenu.classList.toggle("startmenu--clicked")
+    console.log(startmenu)
+})
+
 //ysh
 web.addEventListener("click", () => {
 
@@ -98,7 +111,10 @@ form.addEventListener("submit", (event) => {
     let messageStr = sum(num1, num2);
 
     
-  
+    // const bmiCalc = bmi(weight, height);
+
+    // bmiCalc();
+
     if (messageDiv.children.length > 0) {
         messageDiv.removeChild(document.querySelector("#msg"));
     }
@@ -130,5 +146,9 @@ function updateTime() {
   setInterval(updateTime, 1000);
 
   console.log(timeElement.textContent, "timeElement.textContent");
+
+
+    
+
 
 

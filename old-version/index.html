@@ -1,50 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Fake OS win98</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js" defer></script>
-  <script
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <script
       src="https://kit.fontawesome.com/8830e31e89.js"
       crossorigin="anonymous"
     ></script>
+    <title>Fake OS - Windows98</title>
 
 </head>
-<body id="home">
-  
-  
-  <!-- Selectable Icons -->
-  <div class="icon-container">
-    <div class="selectable-icon" onclick="openApp('app1')"><i class="fa-solid fa-calculator"></i>
-      Calculator
-    </div>
-    <div class="selectable-icon" onclick="openApp('app2')"><i class="fa-brands fa-internet-explorer"></i>
-      Internet Explorer
-    </div>
-    <div class="selectable-icon" onclick="openApp('app3')"><i class="fa-solid fa-magnifying-glass"></i>
-      Search
-    </div>
+<body>
+    <div class="content">
+        <div class="desktop" id="desktop">
+            <div class="folder">
+                <button class="folder folder--calculator" id="calculator">
+                    <img src="./assets/win98-cal.png" alt="Calculator folder" ></button>              
+                
+                <form class="form">
+                    <span class="close">&times;</span>
+                    <h1>Plus only Calculator</h1>
+                    <label for="num1">Num1: </label>
+                    <input type="text" placeholder="Put your number" name="num1" id="num1">
+                    <label for="num2">Num2: </label>
+                    <input type="text" placeholder="Put your another number" name="num2" id="num2">
+                    <input type="submit" class="submit" value="Calculate">
+                    <div class="message" id="message"></div>
+                </form>                
         
-  </div>
+                <button class="folder folder--album" id="album">
+                    <img src="./assets/photo.jpg" alt="Photo folder" ></button>              
+                    
+                <div class="gallery" id="gallery">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>   
+                        <img src="./assets/airplane.jpg"/>
+                        <img src="./assets/cloth.jpg"/>
+                        <img src="./assets/store.jpg"/>
+                    </div>
+                </div>
 
-  <!-- Modal for displaying app content -->
-  <div id="app-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="closeApp()">&times;</span>
-      <div id="app-content"></div>
-    </div>
-  </div>
+                <button class="folder folder--web" id="web">
+                    <img src="./assets/win98-internet.png" alt="internet folder" ></button>              
+                    
+                <div class="internet" id="internet">
+                    <div class="modal-internet">
+                        <span class="close">&times;</span>   
+                        <p></p><a href="https://www.google.com/"></a> 
+                    </div>
+                </div>
 
+                
+                
 
+            </div>
+        </div>
+                
+        <footer>
+            <button class="startBtn"><img src="./assets/win98-start.png" alt="Start button"></button>
 
-  <!-- Current Time -->
-  <div id="current-time" class="showTime"></div>
-  
- 
-  
-
+            <!-- <button id="current-time" class="showTime"></button> -->
+            <div class="showTime" id="current-time"></div>
+        </footer>
 </body>
 </html>
-
