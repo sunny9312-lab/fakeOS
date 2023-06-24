@@ -21,19 +21,33 @@
 
 .icon-container {
   display: flex;
+  flex-direction : column;
   justify-content: center;
+  height : 100px
+  width : 100px
   margin-top: 20px;
+  padding-top : 20px;
 }
 
 .selectable-icon {
+  width : 50px;
+  height : 50px;
   margin: 10px;
   cursor: pointer;
+  border: 1px solid blue;
+  background-color: aqua;
+  border-radius: 4px;
 }
+
 
 #home {
   background-image: url("./win98.png");
   background-repeat: no-repeat;
-  max-width:fit-content;
-  max-height: fit-content;
   /* background-color: #cccccc; */
 } 
+
+.showTime {
+  position: absolute;
+  bottom :50px;
+  right: 50px;
+}

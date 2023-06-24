@@ -28,5 +28,24 @@ function openApp(appName) {
     modal.style.display = 'none';
   }
 
+  function updateTime() {
+    var now = new Date();
+    var timeElement = document.getElementById('current-time');
+    timeElement.textContent = now.toLocaleTimeString();
+  }
 
-    
+  
+  setInterval(updateTime, 1000);
+
+  //without seconds
+  // function updateTime() {
+  //   var now = new Date();
+  //   var hours = now.getHours();
+  //   var minutes = now.getMinutes();
+
+  //   var timeElement = document.getElementById('current-time');
+  //   timeElement.textContent = hours + ":" + (minutes < 10 ? "0" : "") + minutes;
+  // }
+
+  // // Call updateTime function every second (1000 milliseconds)
+  // setInterval(updateTime, 1000);
