@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+body .content {
+  isolation: isolate;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .content .desktop {
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  gap: 1rem;
+}
+body .content .desktop .folder {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .content .desktop button {
+  margin: 2rem;
+  border: none;
+  height: 6rem;
+  width: 6rem;
+  background: none;
+}
+
+body .content .desktop button img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5pm;
+
+}
+body .content .desktop .form {
+  display: none;
+}
+body .content .desktop .formAnimal {
+  display: none;
+}
+body .content .desktop .form--clicked {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.3rem;
+  background-color: grey;
+  margin-top: 1rem;
+  
+}
+body .content .desktop .formAnimal--clicked {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.3rem;
+  background-color: grey;
+  margin-top: 1rem;
+}
+body .content .desktop .form--clicked h1 {
+  background-color: gray;
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .formAnimal--clicked h1 {
+  background-color: gray;
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .form--clicked p {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.4);
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .formAnimal--clicked p {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.4);
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .form--clicked .close {
+  color: black;
+  background-color: #749ef8;
+  align-self: flex-end;
+  margin: 2%;
+  padding: 0 0.5rem 0 0.5rem;
+  /* border-radius: 10%; */
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+}
+body .content .desktop .formAnimal--clicked .close {
+  color: black;
+  background-color: #749ef8;
+  align-self: flex-end;
+  margin: 2%;
+  padding: 0 0.5rem 0 0.5rem;
+  /* border-radius: 10%; */
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+}
+body .content .desktop .form--clicked .close:hover, body .content .desktop .form--clicked .close:focus {
+  background-color: #215cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .content .desktop .gallery {
+  display: none; /* Hidden by default */
+}
+/* internet화면 ysh*/
+body .content .desktop .internet {
+  display: none; /* Hidden by default */
+}
+/* startmenu화면 ysh*/
+.startmenu {
+  display: none; /* Hidden by default */
+}
+/* startmenu clicked */
+
+.startmenu--clicked {
+ 
+  display: flex;
+  position: relative;
+  z-index: 1; 
+  /* Sit on top */
+  padding: 1rem 2rem;
+  width: max-content ;
+  height: max-content;
+  /* border-radius: 2rem; */
+  background-color: grey ; 
+}
+
+body .content .desktop .gallery--clicked {
+  display: flex;
+  position: relative; 
+  /* According to the regular document flow */
+  z-index: 1; /* Sit on top */
+  padding: 1rem 2rem;
+  width: max-content;
+  height: max-content;
+  /* border-radius: 2rem; */
+  background-color: grey; 
+  
+}
+/* internet화면 */
+body .content .desktop .internet--clicked {
+  display: flex;
+  position: relative; /* According to the regular document flow */
+  z-index: 1; /* Sit on top */
+  padding: 1rem 2rem;
+  width: 500px;
+  height: 500px;
+  border-radius: 2px;
+  background-color: black;
+}
+body .content .desktop .gallery--clicked .modal-content .close {
+  color: black;
+  background-color: #749ef8;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 10%;
+  float: right;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+
+}
+/* internet화면 */
+body .content .desktop .internet--clicked .modal-internet .close {
+  color: black;
+  background-color: #749ef8;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 10%;
+  float: right;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+}
+
+body .content .desktop .gallery--clicked .modal-content .close:hover, body .content .desktop .gallery--clicked .modal-content .close:focus {
+  background-color: #215cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* internet화면 */
+body .content .desktop .internet--clicked .modal-internet .close:hover, body .content .desktop .internet--clicked .modal-internet .close:focus {
+  background-color: #215cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .content .desktop .gallery img {
+  height: 10rem;
+  width: 15rem;
+  padding: 0 0.5rem 0 0.5rem;
+}
+/* startmenu화면 */
+.startmenu img {
+  position: absolute;
+  /*ysh*/
+  bottom :90px;
+  left: 10px;
+
+  height: 500px;
+  width: 300px;
+  /* height: 10rem;
+  width: 15rem; */
+  padding: 0 0.5rem 0 0.5rem;
+}
+/* internet화면 */
+body .content .desktop .internet img {
+  height: 10rem;
+  width: 15rem;
+  padding: 0 0.5rem 0 0.5rem;
+}
+body .content footer {
+
+  height: 3rem;
+  margin-top: auto;
+}
+body .content footer button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 4.5rem;
+  height: 2rem;
+  /* width: 8.5rem;
+  height: 3rem; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  padding: 0%;
+}
+body .content footer button img {
+  padding-left: 7%;
+  height: 2.75rem;
+}
+
+body::before {
+  background-image: url("./assets/win98.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  inset: 0;
+  content: "";
+}
+
+.showTime {
+  position: absolute;
+  bottom :50px;
+  right: 50px;
+}
+
+

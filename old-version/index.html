@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/8830e31e89.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fake OS - Windows98</title>
+
+</head>
+<body>
+    <div class="content">
+        <div class="desktop" id="desktop">
+            <div class="folder">
+                <button class="folder folder--calculator" id="calculator">
+                    <img src="./assets/win98-cal.png" alt="Calculator folder" ></button>              
+                
+                <form class="form">
+                    <span class="close">&times;</span>
+                    <h1>Plus only Calculator</h1>
+                    <label for="num1">Num1: </label>
+                    <input type="text" placeholder="Put your number" name="num1" id="num1">
+                    <label for="num2">Num2: </label>
+                    <input type="text" placeholder="Put your another number" name="num2" id="num2">
+                    <input type="submit" class="submit" value="Calculate">
+                    <div class="message" id="message"></div>
+                </form>                
+        
+                <button class="folder folder--album" id="album">
+                    <img src="./assets/photo.jpg" alt="Photo folder" ></button>              
+                    
+                <div class="gallery" id="gallery">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>   
+                        <img src="./assets/airplane.jpg"/>
+                        <img src="./assets/cloth.jpg"/>
+                        <img src="./assets/store.jpg"/>
+                    </div>
+                </div>
+
+                <button class="folder folder--web" id="web">
+                    <img src="./assets/win98-internet.png" alt="internet folder" >
+                    <a href="https://www.google.com/"></a>
+                </button>              
+                    
+                <div class="internet" id="internet">
+                    <div class="modal-internet">
+                        <span class="close">&times;</span>   
+                        <p></p><a href="https://www.google.com/"></a> 
+                    </div>
+                    
+                </div>
+
+                
+                
+
+            </div>
+        </div>
+                
+        <footer>
+            <button class="startBtn"><img src="./assets/win98-start.png" alt="Start button" id="startBtn"></button>
+
+            <!-- <button id="current-time" class="showTime"></button> -->
+            <div class="showTime" id="current-time"></div>
+
+            <div class="startmenu" id="startmenu">
+                <div class="modal-content3">
+                    <span class="close">&times;</span>   
+                    <img src="./assets/win98-menu.png"/>
+                    
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
